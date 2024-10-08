@@ -1,0 +1,33 @@
+{
+    "crude_cutter_cfg":
+    {
+        "template_path" : "templates\\endoscope.png",
+        "template_threshold" : 50000,
+        "proxy_size" : [214, 120],
+        "sample_frame_num" : 50,
+        "gaussianBlur_kernel_size" : [5,5],
+        "dilate_iteration" : 2
+    },
+
+    "fine_cutter_cfg":
+    {
+        "template_path" : "templates\\endoscope.png",
+        "proxy_size" : [214, 120],
+        "interval" : 50,
+        "reserve" : 50,
+        "select_threshold": 0.8
+    },
+
+    "preference":
+    {
+        "output_path":
+        {
+            "win32": "..\\surgery_autoclipped.mp4",
+            "posix": "~/Desktop/surgery_autoclipped.mp4"
+        },
+
+        "tmp_file_path": ".\\tmp\\_result_.mp4"
+
+    }
+
+}
